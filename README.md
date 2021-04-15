@@ -26,7 +26,7 @@
    - Operación para la creación de los registros
    - Desconexión de la base de datos
    
-- Ejecutar el archivo mediante `node`
+- Ejecutar el archivo mediante `node <seedfile>`
   
 ## Apuntes finales
 - La etiqueta `form` dispone de dos atributos: `action` (destino de la información) y `method` (método de envío)
