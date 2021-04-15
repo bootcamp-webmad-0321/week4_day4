@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+
+.search-form label, .login-form label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+
+  .search-form input, .login-form input {
+    width: 100%;
+  }

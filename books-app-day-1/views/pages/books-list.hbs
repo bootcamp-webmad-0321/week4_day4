@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Listado de libros</h1>
+    <hr>
+    <ul>
+        {{#each allBooks}}
+        <li>{{title}} | <a href="/libros/detalles/{{id}}">info</a></li>
+        {{/each}}
+    </ul>
+    <hr>
+    <a href="/" class="btn btn-dark">Volver al incio</a>
+</div>

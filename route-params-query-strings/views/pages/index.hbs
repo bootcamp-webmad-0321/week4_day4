@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>Welcome to {{siteTitle}}</h1>
+    <hr>
+    <h4>Route params</h4>
+    <ul>
+        <li>Los <b>route params</b> son secciones de la URL separadas por
+            <code>/</code>, prefijadas en el endpoint con
+            <code>:</code> y almacenadas en el objero
+            <code>req.params</code>
+        </li>
+        <li>Ejemplo básico: <a href="/vuelos/madrid/berlin/16-abr/22-abr/">link</a></li>
+        <li>Ejemplo básico: <a href="/vuelos/venecia/murcia/25-nov/12-may/">link</a></li>
+    </ul>
+
+    <hr>
+
+    <h4>Query strings</h4>
+    <ul>
+        <li>Los <b>query strings</b> son secciones de la URL tras <code>?</code> en formato <code>clave=valor</code>
+            separadas por <code>&</code>.
+        </li>
+        <li>Son almacenadas en el objeto <code>req.query</code> y no alteran el string del endpoint.
+        </li>
+        <li>Ejemplo básico: <a href="/tienda?prenda=panatalon&termporada=verano&color=verde&talla=XL">link</a></li>
+        <li>Ejemplo básico: <a href="/tienda?prenda=camiseta&termporada=invierno&color=blanca">link</a></li>
+    </ul>
+
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Formulario de compra (GET)</h4>
+            <p>Puedes gestionar un formulario de tipo <code>GET</code> que realiza una petición con los
+                query strings rellenos de forma automática.</p>
+            <a href="/buscador" class="btn btn-dark">Acceder al buscador</a>
+        </div>
+        <div class="col-md-6">
+            <h4>Formulario de login (POST)</h4>
+            <p>Puedes gestionar un formulario de tipo <code>POST</code> que la transfiere los datos de forma no visible,
+                y accesibles en el objeto <code>req.body</code> del endpoint.</p>
+            <a href="/inicio-sesion" class="btn btn-dark">Iniciar sesión</a>
+        </div>
+    </div>
+
+</div>
